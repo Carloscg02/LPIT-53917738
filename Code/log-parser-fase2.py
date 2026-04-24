@@ -179,7 +179,7 @@ def update_graph(n):
 
 async def main():
     print("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-    print(f"Procesador 5G (Fase 1) :: v{version}")
+    print(f"Procesador 5G (Fase 2) :: v{version}")
     print("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n")
 
     asyncio.create_task(tail_file_producer(data_file, queue))
