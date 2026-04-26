@@ -125,7 +125,7 @@ async def consumer(data_queue: asyncio.Queue):
         tiempo_actual = time.time()
         if tiempo_actual - ultimo_guardado_parquet >= 30.0:
             if len(agg_df) > 0:
-                print(f"\n[💾] Pasaron 30s: Guardando {len(agg_df)} registros en Parquet...\n")
+                print(f"\n Pasaron 30s: Guardando {len(agg_df)} registros en Parquet...\n")
                 agg_df.write_parquet(parquet_file)
             ultimo_guardado_parquet = tiempo_actual
 
